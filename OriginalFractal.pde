@@ -23,7 +23,6 @@ public void myFractal(float x, float y, float radius1, float radius2, int npoint
     float sx = x + cos(a) * radius2;
     float sy = y + sin(a) * radius2;
     myFractal(x + cos(a) * radius2/2, y + sin(a) * radius2/2, radius1/2, radius2/2, 5);
-    fill(0,255,0,5);
     vertex(sx, sy);
     sx = x + cos(a+halfAngle) * radius1/2;
     sy = y + sin(a+halfAngle) * radius1/2;
